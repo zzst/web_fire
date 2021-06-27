@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林火预警预报子系统</title>
+    <!-- css -->
+    <!-- 导入 layui 的css样式 -->
+    <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- 导入 第三方图标库 css样式 -->
+    <link rel="stylesheet" href="assets/fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo ">林火预警预报子系统</div>
+
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <!-- 个人中心 start -->
+                <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+                    <a href="javascript:;">
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img"> 个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">更换头像</a></dd>
+                        <dd><a href="">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+                    <a href=""><span class="iconfont icon-zhuxiao"></span>退出</a>
+                </li>
+                <!-- 个人中心 end -->
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-shrink="all">
+                    <!-- layui-nav-itemed 默认展开 -->
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;"><span class="iconfont icon-notification"></span>林火预警</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>实时预警</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>历史记录</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><span class="iconfont icon-history"></span>林火预报</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>未来五天</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;"><span class="iconfont icon-data-view"></span> 气象信息</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>实况信息</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>预警信息</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>历史气象</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="home/dashboard.html" target="fm"><span class="iconfont icon-search" ></span>预警因子</a></li>
+                    <li class="layui-nav-item"><a href=""><span class="iconfont icon-setting"></span>影响因素</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div style="padding: 15px;">
+                <iframe name="fm" src="" frameborder="0">
+                    
+                </iframe>
+            </div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            www.fireSystem.com
+        </div>
+    </div>
+    <!-- 导入 layui 的JS文件 -->
+    <script src="assets/lib/layui/layui.js"></script>
+
+
+
+</body>
+
+</html>
